@@ -1,0 +1,114 @@
+{
+  minzoom: 0
+  maxzoom: 4
+  projection: 4326
+  host: xxx
+  port: 5432
+  dbname=base
+  user=test
+  password=ddd
+  srcs: [
+    {
+      sql: "select bdytyp_code,bdytyp,iso3cd,geom from unhq_bndl05"
+      layer: hq_bnd
+      minzoom: 3 
+      maxzoom: 4
+      projection: 4326
+    }
+    {
+      sql: "select bdytyp_code,bdytyp,iso3cd,geom from unhq_bndl25"
+      layer: hq_bnd
+      minzoom: 0 
+      maxzoom: 2
+      projection: 4326
+    }
+    {
+      sql: "select * from custom_planet_land_a_l08"
+      layer: landmass
+      minzoom: 0 
+      maxzoom: 4
+      projection: 4326
+    }
+    {
+      sql: "select scalerank,name,mission from custom_ne_rivers_lakecentrelines"
+      layer: water
+      minzoom: 0 
+      maxzoom: 4
+      projection: 4326
+    }
+    {
+      sql: "select * from custom_planet_ocean_l08"
+      layer: ocean
+      minzoom: 0 
+      maxzoom: 4
+      projection: 4326
+    }
+    {
+      sql: "select * from unhq_bnda25_cty"
+      layer: bnd_cty
+      minzoom: 1 
+      maxzoom: 4
+      projection: 4326
+    }
+    {
+      sql: "select status,annotationclassid,iso3cd,textstring,fontstyle,fontname,geom from unhq_bnda_cty_anno_l03"
+      layer: lab_cty
+      minzoom: 1 
+      maxzoom: 1
+      projection: 4326
+    }
+    {
+      sql: "select status,annotationclassid,iso3cd,textstring,fontstyle,fontname,geom from unhq_bnda_cty_anno_l04"
+      layer: lab_cty
+      minzoom: 2 
+      maxzoom: 2
+      projection: 4326
+    }
+    {
+      sql: "select status,annotationclassid,iso3cd,textstring,fontstyle,fontname,geom from unhq_bnda_cty_anno_l05"
+      layer: lab_cty
+      minzoom: 3 
+      maxzoom: 3
+      projection: 4326
+    }
+    {
+      sql: "select status,annotationclassid,iso3cd,textstring,fontstyle,fontname,geom from unhq_bnda_cty_anno_l06"
+      layer: lab_cty
+      minzoom: 4 
+      maxzoom: 4
+      projection: 4326
+    }
+    {
+      sql: "select status,annotationclassid,textstring,geom from unhq_cm02_phyp_anno_l04"
+      layer: lab_water
+      minzoom: 3 
+      maxzoom: 3
+      projection: 4326
+    }
+    {
+      sql: "select status,annotationclassid,textstring,geom from unhq_cm02_phyp_anno_l06"
+      layer: lab_water
+      minzoom: 4 
+      maxzoom: 4
+      projection: 4326
+    }
+    {
+      sql: "select gridcode,geom from un_glc30_global_lc_ss"
+      layer: landcover
+      minzoom: 3 
+      maxzoom: 4
+      projection: 4326
+    }
+    {
+      sql: "select objectid, poptyp, poptyp_code, scl_id_code, iso3cd, cartolb, romnam, geom from unhq_popp WHERE poptyp_code=1 OR poptyp_code=2 OR (poptyp_code=3 and scl_id_code=10)"
+      layer: un_popp
+      minzoom: 3 
+      maxzoom: 4
+      projection: 4326
+    }
+  ]
+  ogr2ogrPath: ogr2ogr
+  tippecanoePath: tippecanoe
+  dstDir: zxy
+}
+
