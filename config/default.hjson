@@ -30,7 +30,7 @@
       projection: 4326
     }
     {
-      sql: "select scalerank,name,mission from custom_ne_rivers_lakecentrelines"
+      sql: "select scalerank,name,mission,geom from custom_ne_rivers_lakecentrelines"
       layer: water
       minzoom: 0 
       maxzoom: 4
