@@ -4,9 +4,9 @@
   projection: 3857
   host: xxx
   port: 5432
-  dbname=base
-  user=test
-  password=ddd
+  dbname:base
+  user:test
+  password:ddd
   srcs: [
     {
       sql: "select z_order,geom from osm_planet_landuse_natural_medium_500"
