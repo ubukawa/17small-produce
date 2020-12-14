@@ -51,28 +51,28 @@
       projection: 4326
     }
     {
-      sql: "select status,annotationclassid,iso3cd,textstring,fontstyle,fontname,geom from unhq_bnda_cty_anno_l03"
+      sql: "select status,annotationclassid,textstring,fontstyle,fontname,geom from unhq_bnda_cty_anno_l03"
       layer: lab_cty
       minzoom: 1 
       maxzoom: 1
       projection: 4326
     }
     {
-      sql: "select status,annotationclassid,iso3cd,textstring,fontstyle,fontname,geom from unhq_bnda_cty_anno_l04"
+      sql: "select status,annotationclassid,textstring,fontstyle,fontname,geom from unhq_bnda_cty_anno_l04"
       layer: lab_cty
       minzoom: 2 
       maxzoom: 2
       projection: 4326
     }
     {
-      sql: "select status,annotationclassid,iso3cd,textstring,fontstyle,fontname,geom from unhq_bnda_cty_anno_l05"
+      sql: "select status,annotationclassid,textstring,fontstyle,fontname,geom from unhq_bnda_cty_anno_l05"
       layer: lab_cty
       minzoom: 3 
       maxzoom: 3
       projection: 4326
     }
     {
-      sql: "select status,annotationclassid,iso3cd,textstring,fontstyle,fontname,geom from unhq_bnda_cty_anno_l06"
+      sql: "select status,annotationclassid,textstring,fontstyle,fontname,geom from unhq_bnda_cty_anno_l06"
       layer: lab_cty
       minzoom: 4 
       maxzoom: 4
