@@ -31,7 +31,7 @@
     }
     {
       sql: "select scalerank,name,mission,geom from custom_ne_rivers_lakecentrelines"
-      layer: water
+      layer: un_water
       minzoom: 0 
       maxzoom: 4
       projection: 4326
